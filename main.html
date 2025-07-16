@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Flexbox Item Placement</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .holder {
+      display: flex;
+      flex-wrap: wrap;            /* Allow wrapping */
+      justify-content: center;    /* Center horizontally */
+      align-items: center;        /* Center vertically */
+      width: 80%;
+      gap: 10px;
+    }
+
+    .item {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      font-size: 24px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
-
 <body>
-<div class="holder">
-  <div class="item">Item 1</div>
-  <div class="item">Item 2</div>
-  <div class="item">Item 3</div>
-</div>
 
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <div class="holder">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <!-- Add more items as needed -->
+  </div>
 
 </body>
-
 </html>
